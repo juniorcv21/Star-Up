@@ -1,0 +1,5 @@
+Create DB -- Execute 1 a 1
+DELETE FROM `chatglobal`
+DELETE FROM `usuario`
+ALTER TABLE `chatglobal` AUTO_INCREMENT=1
+ALTER TABLE `usuario` AUTO_INCREMENT=1

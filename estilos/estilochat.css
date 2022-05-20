@@ -1,0 +1,446 @@
+*{
+	margin: 1px;
+	padding: 0;
+	font-family: Verdana, Geneva, tahoma, sans-serif;
+	/*opacity: 0.5;*/
+	text-align: center;
+	color: white;
+}
+body{
+	background: url(fondos/fondoworking.jpg);
+	background-size: 100%;
+}
+
+#mayor{
+	width: 95%;
+	height: 35%;
+	margin: 10px auto;
+	padding-bottom: 12px;
+	background:url(fondos/fondoworking.jpg);
+	background-size: 80%;
+	border-radius: 20px;
+	border: 2px solid #AFAFAF;
+	float: center;
+	position: sticky;
+	top: 0px;
+}
+h1{
+	font-weight: 900;
+}
+h2{
+	font-size: 110%;
+}
+h1 .iluminacion{
+	/*box-shadow: 0 0 10px #f59622, 0 0 40px #f59622, 0 0 80px #f59622;
+	*/
+	cursor: pointer;
+	font-size: 30pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 30%;
+	text-shadow:
+		0 0 5px rgba(236, 140,13,1),
+		0 0 10px rgba(236,142,13,1),
+		0 0 20px rgba(236,108,13,1),
+		0 0 40px rgba(236,91,13,1),
+		0 0 80px rgba(243,91,13,1),
+		0 0 90px rgba(245,69,34,1),
+		0 0 100px rgba(247,20,20,1),
+		0 0 140px rgba(247,20,20,1),
+		0 0 180px rgba(247,20,20,1);
+	animation: animado 3s cubic-bezier(.64, -.56, .36, 1.56) infinite;
+}
+@keyframes animado{
+	50%,55%{
+		color: white;
+		text-shadow: none;
+		transform: rotate(0deg);
+	}100%{
+		color: white;
+		text-shadow:
+		0 0 5px rgba(236, 140,13,1),
+		0 0 10px rgba(236,142,13,1),
+		0 0 20px rgba(236,108,13,1),
+		0 0 40px rgba(236,91,13,1),
+		0 0 80px rgba(243,91,13,1),
+		0 0 90px rgba(245,69,34,1),
+		0 0 100px rgba(247,20,20,1),
+		0 0 140px rgba(247,20,20,1),
+		0 0 180px rgba(247,20,20,1),
+		transform: rotate(360deg);
+	}
+
+}
+
+div#principal{
+	margin: 10px auto;
+	width: 95%;
+	background:rgba(245,69,34,0.2);
+	border-radius: 20px;
+	border: 2px solid #AFAFAF;
+	display: flex;
+    flex-direction: row;
+/*MARGIN TOP*/
+}
+
+.hijoizq{
+	padding: 10px 8px;
+	margin: 30px 10px;
+	width: 90%;
+	height: auto;
+	max-height: 300px;
+	background:rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	border: 1px solid #AFAFAF;
+	overflow-y: scroll;
+}
+.hijoizq .usuariosregistrados{
+	margin: 5px;
+	padding: 10px 10px;
+	float: left;
+	font-size: 16px;
+	border: 1px solid #AFAFAF;
+	border-radius: 10px;
+	background: none;
+	word-wrap: break-word;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.hijoizq .usuariosregistrados:hover{
+	background: #585858;
+}
+.hijoslados #cambiarcontraseña{
+	padding: 12px 8px;
+	margin: 30px 10px;
+	width: 90%;
+	height: auto;
+	max-height: 610px;
+	background:rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	border: 1px solid #AFAFAF;
+}
+.hijoslados #cambiarcontraseña #enviarnewcont{
+	background:rgba(251,0,0,0.6);
+	padding: 10px;
+	width: auto;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	margin:20px 10px;
+	transition: 0.5;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.hijoslados #cambiarcontraseña #enviarnewcont:hover{
+	background:rgba(251,0,0,1);
+	box-shadow: 0 0 10px rgba(251,0,0,1),
+		 		0 0 40px rgba(251,0,0,7),
+	  			0 0 80px rgba(251,0,0,4);
+}
+.inpcontra{
+	width: calc(100% - 30px);
+	padding: 9px;
+	color: white;
+	font-weight: bold;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #AFAFAF;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 12px;
+	transition: 0.9s;
+
+}
+.hijoder{
+	padding: 10px 8px;
+	margin: 10px 10px;
+	width: 90%;
+	height: auto;
+	max-height: 610px;
+	background:rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	border: 1px solid #AFAFAF;
+	overflow-y: scroll;
+}
+.hijoslados{
+padding: 0;
+width: 25%;
+
+}
+.hijosmm{
+padding: 0;
+width: 50%;
+}
+.hijosm{
+	padding: 10px 10px;
+	width: 95%;
+	min-width: 95%;
+	height: 450px;
+	margin: 10px auto;
+	background:rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+	border: 1px solid #AFAFAF;
+	overflow-y: scroll;
+}
+form{
+	padding: 10px 10px;
+	margin: 10px auto;
+	border-radius: 20px;
+	width: 95%;
+}
+form textarea{
+	width: 100%;
+	padding: 10px 0;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 1px solid #AFAFAF;
+	background:rgba(65,65,65,0.6);
+}
+#enviar{
+	background: none;
+	border-radius: 10px;
+	color: white;
+	width: calc(80% - 50px);
+	margin: 0 10px;
+	margin-top: 22px;
+	border: 1px solid #f59622;
+	transition: 0.3s;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	padding:15px 10px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	font-size:18px;
+}
+#enviar:hover{
+	background: #f59622;
+	border: none;
+	box-shadow: 0 0 10px #f59622, 0 0 40px #f59622, 0 0 80px #f59622;
+    transition-delay: .5s;
+	font-size:18px;
+}
+
+button[type="submit"] span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#f59622);
+ }
+button[type="submit"]:hover #span1{
+    left: 100%;
+    transition: .5s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#f59622);
+}
+button[type="submit"]:hover #span3{
+    right: 100%;
+    transition: .5s;
+    transition-delay: .2s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f59622);
+}
+button[type="submit"]:hover #span2{
+    top: 100%;
+    transition: .5s;
+    transition-delay: .1s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f59622);
+}
+button[type="submit"]:hover #span4{
+    bottom: 100%;
+    transition: .5s;
+    transition-delay: .3s;
+}
+.hijoizq::-webkit-scrollbar {
+	width: 12px;
+	background: none;
+}
+.hijoizq::-webkit-scrollbar-thumb {
+	background: #f59622;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #f59622,
+	 0 0 20px #f59622,
+	 0 0 30px #f59622;
+}
+.hijosm::-webkit-scrollbar {
+	width: 12px;
+	background: none;
+}
+.hijosm::-webkit-scrollbar-thumb {
+	background: #f59622;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #f59622,
+	 0 0 20px #f59622,
+	 0 0 30px #f59622;
+}
+.hijoder::-webkit-scrollbar {
+	width: 12px;
+	background: none;
+}
+.hijoder::-webkit-scrollbar-thumb {
+	background: #f59622;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #f59622,
+	 0 0 20px #f59622,
+	 0 0 30px #f59622;
+}
+
+.hijosm .cajachat{
+	background: none;
+	margin: 2px auto;
+	padding: 2px 15px;
+	width: 95%;
+	min-height: 10%;
+	height: auto;
+	display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #D3D3D3;
+}
+a{
+	background:rgba(251,0,0,0.5);
+	padding: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 22px;
+	margin:10px 20px;
+	float: right;
+	transition: 0.5;
+}
+a:hover{
+	background:rgba(251,0,0,1);
+}
+h4{
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	padding: 2%;
+	background: none;
+}
+.hijosm .cajachat .spanchat{
+	background: none;
+	font-size: 18px;
+	padding: auto 1px;
+	float: left;
+	word-wrap: break-word;
+}
+input{
+	width: calc(100% - 20px);
+	padding: 9px;
+	color: #181818;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px;
+}
+div#contenedor_contraseña{
+	width: 100%;
+	padding: 9px 0 0 0;
+	font-weight: bold;
+	margin: auto;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 12px;
+}
+input#contraseña{
+	border: none;
+	width: 85%;
+	height: 100%;
+	float: left;
+	margin:0;
+}
+div#cont_ojo{
+	border: none;
+	width: 7%;
+	float: left;
+}
+img{
+	width: 70%;
+}
+
+input[type="submit"]{
+	background: #AFAFAF;
+	border-radius: 10px;
+	color: #240101;
+	width: calc(80% - 20px);
+	margin: 0 10px;
+	margin-top: 22px;
+	border: none;
+	transition: 0.5s;
+	cursor: pointer;
+}
+input[type="submit"]:hover{
+	background: #650404;
+	color: white;
+	font-size:20px;
+	border:1px solid #AFAFAF;
+}
+.correcto{
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #4e8;
+	color: black;
+}
+.error{
+	text-align: center;
+	width: 50%;
+	position: absolute;
+	right: 24%;
+	border-radius: 15px;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff;
+}
+.hijoder{
+	margin: 30px 10px;
+	width: auto;
+}
+table{
+	border-collapse: collapse;
+	font-size: 13px;
+	margin: 10px auto;
+	width: 90%;
+}
+th, td{
+	
+	border-bottom: solid 1px #0F362D;
+	padding: 3px;
+	background: #0E0E0E;
+}
+th{
+	background: rgba(251,0,0,.5);
+	
+	color: white;
+}
+
+tr:hover td{
+	background: #0F362D;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
+}
