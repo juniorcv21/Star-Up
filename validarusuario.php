@@ -25,7 +25,7 @@
 
 		
 		$_SESSION['nombreusuario'] = $usuario['nombre'];
-		header("location:principal.php");
+		header("location:web/index.html");
 		
 	}else{
 		?>
